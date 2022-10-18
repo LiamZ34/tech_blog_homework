@@ -26,6 +26,10 @@ Post.init(
                 key: 'id'
             }
         }
+    },
+    {
+        sequelize,
+        modelName: "post"
     }
 );
 
