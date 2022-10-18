@@ -17,12 +17,12 @@ const seedDatabase = async () => {
         returning: true,
     });
 
-    for (const post of postData) {
-        await Post.create({
-            ...post,
-            userId: users[match.floor(Nath.random() * users.length)].id,
-        });
-    }
+    // for (const post of postData) {
+    //     await Post.create({
+    //         ...post,
+    //         userId: users[match.floor(Nath.random() * users.length)].id,
+    //     });
+    // }
     process.exit(0);
 }
 
